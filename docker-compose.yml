@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  php:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - /WEBSERVER/phpconfig:/var/www
+
+      - /WEBSERVER/phpconfig/.home/:/root/
+
+      - app:/var/www/vendor
+      - vscode:/root/.vscode-server
+
+volumes:
+  app:
+  vscode:
