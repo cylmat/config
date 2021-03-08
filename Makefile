@@ -1,5 +1,9 @@
 SHELL := /bin/bash
 
+home:
+	cp -r home ~
+	source ~/bashrc
+
 ###########
 # GRUMPHP #
 ###########

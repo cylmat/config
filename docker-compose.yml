@@ -6,10 +6,11 @@ services:
     restart: unless-stopped
     volumes:
       - /WEBSERVER/phpconfig:/var/www
-      - /WEBSERVER/phpconfig/.home:/root
+      - home:/root
       - vendor:/var/www/vendor
       - vscode:/root/.vscode-server
 
 volumes:
+  home:
   vendor:
   vscode:

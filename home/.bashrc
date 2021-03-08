@@ -17,7 +17,7 @@
 # alias cp='cp -i'
 # alias mv='mv -i'
 
-if [[ -f ~/prompt/user_prompt.sh ]] 
+if [[ -f ~/user_prompt.sh ]] 
 then
-  source ~/prompt/user_prompt.sh
+  source ~/user_prompt.sh
 fi;
