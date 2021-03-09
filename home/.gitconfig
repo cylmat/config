@@ -25,6 +25,14 @@
 [core]
 	autocrlf = input
 	editor = vim
+
+[credential]
+	helper = store --file ~/.git-credentials
+	helper = cache --timeout 300000
+
+#[credential "https://example.com"]#
+	#username = your_user
+	#helper = "!f() { test \"$1\" = get && echo \"password=$(cat $HOME/.secret)\"; }; f"
 	
 [filter "lfs"]
 	clean = git-lfs clean -- %f
