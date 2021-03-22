@@ -20,4 +20,6 @@
 if [[ -f ~/user_prompt.sh ]] 
 then
   source ~/user_prompt.sh
+else
+  "~/user_prompt.sh not found!"
 fi;

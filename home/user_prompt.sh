@@ -9,9 +9,10 @@
 # https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
 
 ### CHANGE PROMPT
-if [[ ! -f ~/prompt/git-completion.bash ]] || [[ ! -f ~/prompt/git-completion.bash ]]
+if [[ ! -f ~/prompt/git-prompt.sh ]] || [[ ! -f ~/prompt/git-completion.bash ]]
 then
-  return 1;
+  echo "git prompt or completion not found"
+  return 1
 fi
 
 source ~/prompt/git-completion.bash
